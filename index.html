@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+		<link rel="stylesheet" type="text/css" href="font/flaticon.css">
+		<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+		<script>
+// Initialize Firebase
+var config = {
+	apiKey: "AIzaSyAKpdUF5aNlVd8PFd6ywUxZ182ZSK8xk0g",
+	authDomain: "bits-token.firebaseapp.com",
+	databaseURL: "https://bits-token.firebaseio.com",
+	projectId: "bits-token",
+	storageBucket: "bits-token.appspot.com",
+	messagingSenderId: "122375214979"
+};
+firebase.initializeApp(config);
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="scripts.js"></script> 
+	</head>
+	<body>
+		<header>
+			<h1 id="logo">Token++</h1>
+			<h1 id = "tagline">The BITS Queue Management System</h1>
+
+			<h1 id="user" class = "disappear">Admin</h1>
+		</header>
+		<hr>
+		<div class = "dept-wrapper">
+			<div class = "dept-btn">
+				<span class= "flaticon-cutlery"></span>	
+				<a id="admin" href="#">Canteen</a>
+			</div>
+			<div class = "dept-btn">
+				<span class = "flaticon-monitor"></span> 
+				<a id="it" href="#">IT</a>
+			</div>
+
+			<div class  = "dept-btn">
+				<span class = "flaticon-notebook"></span>
+				<a id="account" href="#">Accounts</a>
+			</div>
+
+		</div>
+		<div class="login-form">
+			<div class="form-group ">
+				<input type="text" class="form-control" placeholder="Username " id="UserName">
+				<i class="fa fa-user"></i>
+			</div>
+			<div class="form-group log-status">
+				<input type="password" class="form-control" placeholder="Password" id="Passwod">
+				<i class="fa fa-lock"></i>
+			</div>
+			<span class="alert">Invalid Credentials</span>
+			<a class="link" id="guestlink"  href="/guest.html">Continue as guest</a>
+			<a id="implink" href = "/accounts.html"><button type="button" class="log-btn" >Log in</button></a>
+
+
+		</div>
+
+	</body>
+</html>

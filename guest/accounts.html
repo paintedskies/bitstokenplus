@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+	
+
+
+
+		<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+		<script>
+// Initialize Firebase
+var config = {
+	apiKey: "AIzaSyAKpdUF5aNlVd8PFd6ywUxZ182ZSK8xk0g",
+	authDomain: "bits-token.firebaseapp.com",
+	databaseURL: "https://bits-token.firebaseio.com",
+	projectId: "bits-token",
+	storageBucket: "bits-token.appspot.com",
+	messagingSenderId: "122375214979"
+};
+firebase.initializeApp(config);
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="accscripts.js"></script> 
+	</head>
+	
+	<body>
+	<header>
+		<h1 id="logo">Token++</h1>
+		<h1 id = "tagline">The BITS Queue Management System</h1>
+		<h1 id="user">Guest</h1>
+	</header>
+	<hr>
+	
+		<div class = "wrapper">
+
+			<div class = "outer first">
+				<div class = "token">
+					<p id="call-token">-</p>
+					<div class = "desc">
+						<p id = "call-desc">Comments: -</p>
+						<p id = "time-slot">Time: -</p>
+					</div>
+				</div>
+			</div>
+
+			<div class = "outer second">
+				<div class = "token firsttoken">
+					<p id="token1">-</p>
+				</div>
+				<div class = "token">
+					<p id="token2">-</p>
+				</div>
+			</div>
+		</div>
+	
+	</body>
+</html>

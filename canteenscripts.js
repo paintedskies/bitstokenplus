@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var database = firebase.database();
-	var tokenRef = database.ref("CodesCanteen");
+	var tokenRef = database.ref("CodesCn");
 	var currToken = "AB100";
 	var currKey;
 	var callKey;

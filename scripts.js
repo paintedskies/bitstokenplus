@@ -16,8 +16,8 @@ var repo = "/bitstokenplus";
 				$("span",this).addClass("selected");
 				var x = $(this).find("a").html();
 				var y;
-				if(x == "Admin")
-					y="/admin.html";	
+				if(x == "Canteen")
+					y="/canteen.html";	
 				else if(x=="IT")
 					y="/it.html";
 				else if(x == "Accounts")

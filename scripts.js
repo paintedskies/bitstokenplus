@@ -5,6 +5,7 @@ $(document).ready(function(){
 	var currKey;
 	var callKey;
 	var callNum;
+var repo = "/bitstokenplus";
 	console.log(tokenRef);
 	$(".dept-btn").click(function()
 			{
@@ -21,8 +22,8 @@ $(document).ready(function(){
 					y="/it.html";
 				else if(x == "Accounts")
 					y = "/accounts.html";
-$("#implink").attr("href",y);
-$("#guestlink").attr("href","/guest"+y);
+$("#implink").attr("href",repo+y);
+$("#guestlink").attr("href",repo+"/guest"+y);
 
 			});
 	//Activates when the first child is removed
